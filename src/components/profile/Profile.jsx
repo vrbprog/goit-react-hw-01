@@ -1,22 +1,22 @@
 import css from "./Profile.module.css";
 import Stats from '../stats/Stats';
 
-export default function Profile({followers, views, likes}) {
+export default function Profile({image,name,tag,location,stats}) {
   return (
       <div className={css.profile}>
           <div className={css.userInfo}>
               <img className={css.avatar}
-                src="./src/assets/img/avatar.png"
+                src={image}
                 alt="User avatar"
             />
-              <p>Rivaldo</p>
-              <p>@jkrivaldo</p>
-              <p>Santo Del Pedro, Argentina</p>
+              <p>{name}</p>
+              <p>@{tag}</p>
+              <p>{location}</p>
           </div>
           <ul className={css.boxProperties}>
-              <Stats name="Followers" value={followers} />
-              <Stats name="Views" value={views} />
-              <Stats name="Likes" value={likes} />
+              <Stats name="Followers" value={stats.followers} />
+              <Stats name="Views" value={stats.views} />
+              <Stats name="Likes" value={stats.likes} />
           </ul>
     </div>
   );

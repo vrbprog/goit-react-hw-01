@@ -1,10 +1,17 @@
 
 import User from './profile/Profile';
 
+import userData from "../../userData.json";
+
 export default function App() {
   return (
     <div>
-      <User followers="1298" views="3276" likes="1984" />
+      <User
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats} />
     </div>
   );
 }
