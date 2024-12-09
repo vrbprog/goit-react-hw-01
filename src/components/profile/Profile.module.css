@@ -1,0 +1,36 @@
+.profile {
+    width: 240px;
+    height: 240px;
+    border: 2px solid rgb(44, 44, 46);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        color: #181818;
+    }
+    h4 {
+        color: #929292;
+        font-weight: 400;
+    }
+
+    .boxProperties {
+        display: flex;
+        flex-direction: row;
+        height: 25%;
+    }
+
+    .avatar {
+        width: 80px;
+        margin-top: 6px;
+        border-radius: 50%;
+    }
+
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
