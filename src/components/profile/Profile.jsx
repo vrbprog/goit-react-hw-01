@@ -9,9 +9,9 @@ export default function Profile({image,name,tag,location,stats}) {
                 src={image}
                 alt="User avatar"
             />
-              <p>{name}</p>
-              <p>@{tag}</p>
-              <p>{location}</p>
+              <p className={css.userName}>{name}</p>
+              <p className={css.userTag}>@{tag}</p>
+              <p className={css.userTag}>{location}</p>
           </div>
           <ul className={css.boxProperties}>
               <Stats name="Followers" value={stats.followers} />

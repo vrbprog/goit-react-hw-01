@@ -9,8 +9,13 @@
     z-index: -3;
     border-top: 1px solid #929292;
     border-right: 1px solid #929292;
+    font-weight: 400;
 
     &:last-child {
         border-right: none;
+    }
+
+    .statValue {
+        font-weight: 700;
     }
 }

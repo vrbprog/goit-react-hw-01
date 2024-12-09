@@ -8,14 +8,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-    h3 {
-        color: #181818;
-    }
-    h4 {
-        color: #929292;
-        font-weight: 400;
-    }
-
     .boxProperties {
         display: flex;
         flex-direction: row;
@@ -33,5 +25,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .userName {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 4px 0px;
+    }
+
+    .userTag {
+        color: #808080;
+        font-weight: 500;
     }
 }
