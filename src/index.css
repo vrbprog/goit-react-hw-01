@@ -45,6 +45,7 @@ a:hover {
 
 body {
     margin: 0;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
