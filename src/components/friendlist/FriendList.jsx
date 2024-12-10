@@ -1,7 +1,7 @@
-import css from "./Friends.module.css";
+import css from "./FriendList.module.css";
 import Friend from '../friend/friend';
 
-export default function Friends({ friends }) {
+export default function FriendList({ friends }) {
     const listFriend = [];
     for (const friend of friends) {
         listFriend.push(
