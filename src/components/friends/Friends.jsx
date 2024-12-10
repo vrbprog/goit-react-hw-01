@@ -6,6 +6,7 @@ export default function Friends({ friends }) {
     for (const friend of friends) {
         listFriend.push(
             <Friend
+                key = {friend.id}
                 avatar={friend.avatar}
                 name={friend.name}
                 isOnline={friend.isOnline}
