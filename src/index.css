@@ -29,6 +29,10 @@ ol {
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -91,4 +95,10 @@ button:focus-visible {
     button {
         background-color: #f9f9f9;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
