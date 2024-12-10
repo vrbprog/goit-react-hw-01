@@ -1,8 +1,10 @@
 
 import User from './profile/Profile';
 import FriendList from './friendlist/Friendlist';
+import Transactions from './transactionhistory/TransactionHistory'
 import userData from "../../userData.json";
 import friendsList from "../../friends.json";
+import transactions from "../../transactions.json";
 
 
 export default function App() {
@@ -18,6 +20,11 @@ export default function App() {
       <FriendList
         friends={friendsList}
       />
+
+      <Transactions
+        tran={transactions}
+      />
+
     </main>
   );
 }
