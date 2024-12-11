@@ -4,7 +4,7 @@ import FriendList from './friendlist/FriendList';
 import Transactions from './transactionhistory/TransactionHistory'
 import userData from "../../userData.json";
 import friendsList from "../../friends.json";
-import transactions from "../../transactions.json";
+import transactionsList from "../../transactions.json";
 
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
       />
 
       <Transactions
-        tran={transactions}
+        transactions={transactionsList}
       />
 
     </main>
